@@ -578,7 +578,7 @@
             smoothedParallax.x += (handParallax.x - smoothedParallax.x) * 3.0 * dt; smoothedParallax.y += (handParallax.y - smoothedParallax.y) * 3.0 * dt;
             const tiltX = smoothedParallax.y * 0.3; const tiltY = smoothedParallax.x * 0.3; const breathingY = Math.sin(time * 0.5) * 0.1;
 
-            if (isLoadingDelay) { loadingDelayTime -= dt; if (loadingDelayTime <= 0) { isLoadingDelay = false; setGuide("Nắm tay <span class='highlight'>✊</span> để biến Cà rốt, hoặc ghép Tim 🫶"); } }
+            if (isLoadingDelay) { loadingDelayTime -= dt; if (loadingDelayTime <= 0) { isLoadingDelay = false; setGuide("Nắm tay <span class='highlight'>✊</span> để biến Cà rốt, hoặc ghép Tim 🫶 để biến ảnh"); } }
             const h1 = document.getElementById('main-title'); if (h1) { if (appState === 'READING_LETTER') h1.classList.add('hide-title'); else h1.classList.remove('hide-title'); }
 
             switch (appState) {
@@ -718,3 +718,4 @@
 
 
 </html>
+
